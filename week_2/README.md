@@ -26,3 +26,5 @@
     int value_in_num = *p;
     *p = 42;
     ```
+    - It is not a good idea to return a memory address outside of a function. [Here](./puzzle.cpp) is an example of pointers in action.
+

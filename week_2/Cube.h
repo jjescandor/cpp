@@ -1,12 +1,15 @@
 #pragma once
 
-class Cube
+namespace uiuc
 {
-public:
-    double getVolume();
-    double getSuraceArea();
-    void setLength(double length);
+    class Cube
+    {
+    public:
+        double getVolume();
+        double getSurfaceArea();
+        void setLength(double length);
 
-private:
-    double length_;
+    private:
+        double length_;
+    };
 }
