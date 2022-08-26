@@ -34,5 +34,18 @@
     - In C++, if we need to exist for longer than lifecycle of the function, we must use heap memory.
     - The only way to create heap memory in C++ is with the new operator.
     - The new operator returns a pointer to the memory storing the data - not an instance of the data itself.
-    
+    - The new operator in C++ will always do three things:
+        - Allocate memory on the heap for data structure.
+        - Initialize the data structure
+        - Return a pointer to the start of the data structure
+    The memory is only every is only every reclaimed by the system when the pointer is passed to the delete operator.
+    - nullptr 
+    - Arrow Operator -> 
+        - When an object is stored via a pointer, acces can be made to member functions using the -> operator:
+        ```
+        c->getVolume(); 
+        identical to
+        (*c).getVolume();
+        ```
+
 
