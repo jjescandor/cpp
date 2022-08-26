@@ -26,5 +26,13 @@
     int value_in_num = *p;
     *p = 42;
     ```
-    - It is not a good idea to return a memory address outside of a function. [Here](./puzzle.cpp) is an example of pointers in action.
+    - It is not a good idea to return a memory address outside of a function. [Here](./puzzle.cpp) is an example of pointers in action that results to unexpected results.
+    - [Here](./main.cpp) is an example of pointers, reference, and dereference in action.
+
+1. Heap Memory
+    - Heap memory allows us to create a memory independent of the lifecycle of the function.
+    - In C++, if we need to exist for longer than lifecycle of the function, we must use heap memory.
+    - The only way to create heap memory in C++ is with the new operator.
+    - The new operator returns a pointer to the memory storing the data - not an instance of the data itself.
+    
 
