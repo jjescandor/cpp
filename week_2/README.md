@@ -39,7 +39,13 @@
         - Initialize the data structure
         - Return a pointer to the start of the data structure
     The memory is only every is only every reclaimed by the system when the pointer is passed to the delete operator.
-    - nullptr 
+    - nullptr
+        - The C++ keyword nullptr is a pointer that points to the memory address 0X0
+        - nullptr represents a pointer to "nowhere"
+        - Address 0X0 is reserved and never used by the system.
+        - Address 0x0 will always generate a "segmentation fault" when accessed.
+        - Calls to delete 0x0 are ignored.
+        - [Here](./heap1.cpp) is an example of nullptr in action.
     - Arrow Operator -> 
         - When an object is stored via a pointer, acces can be made to member functions using the -> operator:
         ```
@@ -47,5 +53,8 @@
         identical to
         (*c).getVolume();
         ```
+    - [Puzzle1](./heap_memory_puzzles/puzzle1.cpp)
+    - [Puzzle2](./heap_memory_puzzles/puzzle2.cpp)
+    - [Puzzle3](./heap_memory_puzzles/puzzle3.cpp)
 
 
